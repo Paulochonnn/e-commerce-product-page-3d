@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="sneakers">
+      </a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button class="cart-icon" id="cartIcon">
+        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <img src="images/image-avatar.png" alt="Avatar" class="avatar">
+    </div>
+  </header>
+
+  <!-- Cart Dropdown -->
+  <div class="cart-dropdown" id="cartDropdown">
+    <div class="cart-header">Cart</div>
+    <div class="cart-content" id="cartContent">
+      <div class="cart-empty">Your cart is empty.</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Product Images -->
+    <div class="product-images">
+      <div class="main-image-container" id="mainImage">
+        [3D Model Here]
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <div class="company-name">Sneaker Company</div>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+      <div class="pricing">
+        <div class="current-price-wrapper">
+          <span class="current-price">$125.00</span>
+          <span class="discount-badge">50%</span>
+        </div>
+        <span class="original-price">$250.00</span>
+      </div>
+      <div class="actions">
+        <div class="quantity-selector">
+          <button class="quantity-btn" id="decreaseQty">−</button>
+          <span class="quantity" id="quantity">0</span>
+          <button class="quantity-btn" id="increaseQty">+</button>
+        </div>
+        <button class="add-to-cart" id="addToCart">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/>
+          </svg>
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  
+  <!-- Tes scripts -->
+  <script src="script.js"></script>
+  <script src="three-scene.js"></script>
+</body>
+</html>
