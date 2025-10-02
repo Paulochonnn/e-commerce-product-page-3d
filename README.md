@@ -27,10 +27,10 @@ Users should be able to:
 - View the cart and remove items from it
 ### Screenshot
 
-!(./screenshot.png)
+(./screenshot.png)
 ### Links
 
-- Live Site URL: [Add live site URL here](https://e-commerce-product-page-3d.netlify.app)
+- Live Site URL: [(https://e-commerce-product-page-3d.netlify.app)]
 
 
 ## My process
