@@ -27,7 +27,9 @@ Users should be able to:
 - View the cart and remove items from it
 ### Screenshot
 
-(./screenshot.png)
+![E-commerce product page with 3D sneaker](./screenshot.png)
+*Interactive 3D sneaker viewer built with Three.js*
+
 ### Links
 
 - Live Site URL: [(https://e-commerce-product-page-3d.netlify.app)]
